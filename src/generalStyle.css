@@ -1,0 +1,14 @@
+.test{
+    color: blue;
+    font-size: larger;
+}
+
+
+body {
+    background-color: blue;
+  }
+
+  p {
+    color: red;
+    padding: 60px;
+  }

@@ -17,6 +17,11 @@ registerApplication({
   app: () => System.import("@weincode/mf-images"),
   activeWhen: ["/image"]
 });
+// registerApplication({
+//   name: "@app/app1",
+//   app: () => System.import("@app/app1"),
+//   activeWhen: ["/"]
+// });
 
 
 

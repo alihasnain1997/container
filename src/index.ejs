@@ -5,6 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="generalStyle.css" />
+  <!-- <style>
+    body {
+      background-color: blue;
+    }
+
+    p {
+      color: red;
+      padding: 60px;
+    }
+  </style> -->
   <title>Root Config</title>
   <!--
     Remove this if you only support browsers that support async/await.
@@ -50,12 +61,11 @@
     {
       "imports": {
         "@weincode/root-config": "//localhost:9000/weincode-root-config.js",
+        "@weincode/shared": "//localhost:9001/weincode-shared.js",
+        "@app/app1": "//localhost:4206/main.js",
         "@weincode/mf-header": "//localhost:4200/main.js",
         "@weincode/mf-main": "//localhost:4202/main.js",
         "@weincode/mf-images": "//localhost:4204/main.js"
-
-
-
       }
     }
   </script>
@@ -96,7 +106,7 @@
   <main style="height: 58hv;">
     <section id="single-spa-application:@weincode/mf-main"></section>
     <section id="single-spa-application:@weincode/mf-images"></section>
-
+    <section id="single-spa-application:@app/app1"></section>
   </main>
   <script>
     System.import('@weincode/root-config');
